@@ -1,0 +1,21 @@
+# _config.yml
+title: baroot.me
+description: Thoughts, projects, and code by @yashbarot6312
+author: Yash Barot
+email: hi@baroot.me
+url: "https://baroot.me"
+baseurl: ""
+
+# Theme
+remote_theme: pages-themes/minimal@v0.2.0
+plugins:
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
