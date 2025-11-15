@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>{{ page.title }} - baroot.me</title>
+  <meta name="description" content="{{ page.description | default: site.description }}" />
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}" />
+  <style>
+    :root { --bg: #0d1117; --text: #c9d1d9; --accent: #58a6ff; --gray: #8b949e; }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; background:var(--bg); color:var(--text); line-height:1.6; padding:2rem; max-width:800px; margin:auto; }
+    header, footer { text-align:center; padding:2rem 0; }
+    h1, h2, h3 { color:#fff; }
+    a { color:var(--accent); text-decoration:none; }
+    a:hover { text-decoration:underline; }
+    .post-meta { font-size:0.9rem; color:var(--gray); }
+    .post-list li { margin:1.5rem 0; padding-bottom:1rem; border-bottom:1px solid #30363d; }
+    nav a { margin:0 1rem; }
+    pre { background:#161b22; padding:1rem; border-radius:6px; overflow:auto; }
+    code { background:#30363d; padding:0.2rem 0.4rem; border-radius:3px; font-size:0.9rem; }
+    @media (max-width:600px) { body { padding:1rem; } h1 { font-size:2rem; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1><a href="/">baroot.me</a></h1>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/archive">Archive</a>
+      <a href="https://github.com/yashbarot0" target="_blank">GitHub</a>
+    </nav>
+  </header>
+
+  <main>
+    {{ content }}
+  </main>
+
+  <footer>
+    <p>© {{ 'now' | date: "%Y" }} Yash Barot • <a href="/feed.xml">RSS</a></p>
+  </footer>
+</body>
+</html>
