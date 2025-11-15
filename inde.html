@@ -5,15 +5,53 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>baroot.me</title>
   <style>
-    body {font-family:system-ui;background:#0d1117;color:#fff;text-align:center;padding:60px;}
-    h1 {font-size:3rem;margin:0;}
-    p {color:#aaa;margin-top:10px;}
-    a {color:#58a6ff;}
+    :root { --accent: #58a6ff; }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #0d1117;
+      color: #c9d1d9;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+    }
+    h1 {
+      font-size: 3.5rem;
+      font-weight: 700;
+      background: linear-gradient(90deg, #58a6ff, #f0f6fc);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 1rem;
+    }
+    p { font-size: 1.2rem; margin: 0.5rem 0; color: #8b949e; }
+    .links { margin-top: 2rem; }
+    .links a {
+      color: var(--accent);
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: 500;
+    }
+    .links a:hover { text-decoration: underline; }
+    footer { margin-top: 3rem; font-size: 0.9rem; color: #484f58; }
   </style>
 </head>
 <body>
   <h1>baroot.me</h1>
-  <p>Powered by GitHub Pages • @yashbarot6312</p>
-  <p><a href="https://github.com/yashbarot6312/baroot.me" target="_blank">View Source</a></p>
+  <p>Personal site of <strong>@yashbarot6312</strong></p>
+  <p>Student • Developer • Ireland</p>
+  
+  <div class="links">
+    <a href="https://github.com/yashbarot0" target="_blank">GitHub</a>
+    <a href="https://baroot.dev" target="_blank">baroot.dev</a>
+    <a href="mailto:hi@baroot.me">Email</a>
+  </div>
+
+  <footer>
+    Powered by GitHub Pages • Built with ❤️ in IE
+  </footer>
 </body>
 </html>
